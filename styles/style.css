@@ -477,3 +477,97 @@ footer {
   color: #b3b3b3;
   margin-left: 33%;
 }
+.popup {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+}
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+.popup__body {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 10px;
+}
+.popup__content {
+  background-color: #fff;
+  width: 620px;
+  height: 1000px;
+  padding: 60px 99px;
+  position: relative;
+}
+.popup__title {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+  text-align: center;
+  margin-bottom: 34px;
+
+  color: #37373f;
+}
+.popup__close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+.popup__text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: #37373f;
+}
+.modal__stars {
+  color: #fc9b09;
+}
+
+input {
+  background: none;
+  border: 0.5px solid #c7c7c7;
+  border-radius: 3px;
+  padding: 13px 20px;
+  width: 100%;
+  margin: 23px 0 23px;
+}
+.card__inner {
+  margin: 0px;
+}
+.card__number {
+  margin-top: 23px;
+}
+.cards__date {
+  width: 50%;
+}
+.cards__cvv {
+  margin-left: 12px;
+  width: 46%;
+}
+.checkbox {
+  display: flex;
+  align-items: center;
+}
+.checkbox input {
+  width: 16px;
+  height: 16px;
+}
+.checkbox p {
+  margin-left: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+.btn__close {
+  display: flex;
+  text-align: center;
+  padding: 22px 135px;
+  background-color: #fc9b09;
+  color: #fff;
+  border-radius: 3px;
+}

@@ -42,7 +42,7 @@
             </div>
           </div>
           <div class="btn__modal">
-            <button class="btn">Забронировать место</button>
+            <button id="open" class="btn">Забронировать место</button>
           </div>
         </div>
       </div>
@@ -168,7 +168,7 @@
               <p>Осталось — 1 место</p>
             </div>
             <div class="date__button">
-              <button class="date__btn">Выбрать</button>
+              <button id="open" class="date__btn">Выбрать</button>
             </div>
           </div>
           <div class="date__set">
@@ -178,7 +178,7 @@
               <p>Осталось — 1 место</p>
             </div>
             <div class="date__button">
-              <button class="date__btn">Выбрать</button>
+              <button id="open" class="date__btn">Выбрать</button>
             </div>
           </div>
           <div class="reviews__block">
@@ -375,5 +375,88 @@
         </div>
       </div>
     </footer>
+    <div id="popup" class="popup hidden">
+      <div class="popup__body">
+        <div class="popup__content">
+          <div class="close__modal">
+            <a class="popup__close" href="#"
+              ><img src="./img/Close.svg" alt=""
+            /></a>
+          </div>
+          <div class="popup__title">Бронирование</div>
+          <div class="popup__text">
+            <form action="">
+              <label for="date">Дата<span class="modal__stars">*</span></label>
+              <input
+                class="date__input"
+                type="month"
+                id=""
+                name="month"
+                value="2022-12"
+                required
+              />
+              <label for="email"
+                >Email<span class="modal__stars">*</span></label
+              >
+              <input
+                id="null"
+                typetype="email"
+                placeholder="Электронная почта"
+                required
+              />
+              <label for="name">Имя<span class="modal__stars">*</span></label>
+              <input type="name" value="Иван" required />
+              <label for="name"
+                >Фамилия<span class="modal__stars">*</span></label
+              >
+              <input type="name" value="Иванович" required />
+              <label for="number"
+                >Телефон<span class="modal__stars">*</span></label
+              >
+              <input
+                id="null"
+                type="nmae"
+                placeholder="+7 (905) ***-**-40"
+                required
+              />
+              <label for="card"
+                >Данные карты<span class="modal__stars">*</span></label
+              >
+              <input
+                id="null"
+                class="card__inner card__number"
+                type=""
+                placeholder="Номер карты"
+                required
+              />
+              <input
+                id="null"
+                class="card__inner cards__date"
+                type=""
+                placeholder="Срок действия"
+                required
+              />
+              <input
+                id="null"
+                class="card__inner cards__cvv"
+                type=""
+                placeholder="CVV"
+                required
+              />
+              <div class="checkbox">
+                <input type="checkbox" ckecked />
+                <p>
+                  Я согласен с пользовательским соглашением и публичной офертой
+                </p>
+              </div>
+              <div class="close__modal">
+                <a class="btn__close" href="">Забронировать</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./scripts/script.js"></script>
   </body>
 </html>
